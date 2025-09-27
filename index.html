@@ -69,6 +69,12 @@
       border-radius: 20px;
       font-size: 1.5em;
     }
+    .signature {
+      margin-top: 50px;
+      font-size: 1.2em;
+      font-style: italic;
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
@@ -80,18 +86,20 @@
     İyi ki doğdun, iyi ki varsın 🌸💝
   </div>
 
-<audio id="bg-music" loop>
-  <source src="sarki.mp3" type="audio/mpeg">
-</audio>
+  <div class="signature">— Y.Ayhan 💫</div>
+
+  <audio id="bg-music" loop>
+    <source src="sarki.mp3" type="audio/mpeg">
+  </audio>
 
   <script>
-      const audio = document.getElementById("bg-music");
+    const audio = document.getElementById("bg-music");
 
-  // Sayfaya bir kere tıklayınca müzik başlasın
-  document.body.addEventListener("click", () => {
-    audio.play();
-  });
-  
+    // Sayfaya bir kere tıklayınca müzik başlasın
+    document.body.addEventListener("click", () => {
+      audio.play();
+    });
+
     const heartsContainer = document.querySelector('.hearts');
     function createHeart() {
       const heart = document.createElement('div');
